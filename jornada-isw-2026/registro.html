@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro 2026</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programa.html">Programa</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+        <h1>Formulario de Registro - Jornada Ingeniero en Software 2026</h1>
+    </header>
+        <form action="#" method="post">
+            <!-- Nombre completo -->
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <!-- Correo institucional UES -->
+            <label for="correo">Correo institucional UES:</label>
+            <input type="email" id="correo" name="correo" required pattern="([0-9]{8}|[0-9]{11})@ues\.mx"
+                placeholder="Ej: 12345678@ues.mx">
+            <br><br>
+
+            <!-- Tipo de asistencia ISW -->
+            <label for="tipo">Tipo de asistencia ISW:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="alumno">Alumno (Ing. en Software)</option>
+                <option value="docente">Docente (Ing. en Software)</option>
+            </select>
+            <br><br>
+
+            <!-- Evento principal -->
+            <fieldset>
+                <legend>Evento principal:</legend>
+                <input type="radio" id="conferencia1" name="conferencia" value="conferencia1" required>
+                <label for="conferencia1">Semiconductores en la IA</label>
+                <input type="radio" id="conferencia2" name="conferencia" value="conferencia2">
+                <label for="conferencia2">Por que me ruge la tripa?</label>
+                <input type="radio" id="entrega-reconocimientos" name="entrega" value="entrega-reconocimientos">
+                <label for="entrega-reconocimientos">Entrega de reconocimientos</label>
+                <input type="radio" id="conferencia3" name="conferencia" value="conferencia3">
+                <label for="conferencia3">Taller de Innovación</label>
+                <input type="radio" id="evento-cultural" name="evento" value="evento-cultural">
+                <label for="evento-cultural">Evento Cultural</label>
+
+            </fieldset>
+            <br>
+
+            <!-- Comentarios -->
+            <label for="comentarios">Comentarios (opcional):</label>
+            <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+            <br><br>
+
+            <button type="submit">Registrarse</button>
+        </form>
+</body>
+
+</html>
