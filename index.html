@@ -13,24 +13,75 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="programa.html">Programa</a></li>
-                <li><a href="registro.html">Registro</a></li>
+                <li><a href="#form-registro">Registro</a></li>
             </ul>
         </nav>
         <img src="img/logo-ues.png" alt="Logo de la Universidad Estatal de Sonora" width="150">
         <h1>Jornada de Ingeniero en Software 2026</h1>
         <p>
             Fecha:
-            <time datetime="2026-04-27">27 de abril de 2026</time>
+            <time datetime="2026-04-27">Lunes 27 de abril de 2026</time>
         </p>
     </header>
-    <nav>
-        <!-- Enlaces de navegación aquí -->
-    </nav>
     <main>
-        <!-- Contenido principal aquí -->
+        <!--FORMULARIO DE REGISTRO AQUI -->
+        <section>
+            <h2>Formulario de Registro</h2>
+
+            <form action="#" method="post" id="form-registro">
+                <!-- Nombre completo -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <!-- Correo institucional UES -->
+                <label for="correo">Correo institucional UES:</label>
+                <input type="email" id="correo" name="correo" required pattern="([0-9]{8}|[0-9]{11})@ues\.mx"
+                    placeholder="Ej: 12345678@ues.mx">
+                <br><br>
+
+                <!-- Tipo de asistencia ISW -->
+                <label for="tipo">Tipo de asistencia ISW:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="alumno">Alumno (Ing. en Software)</option>
+                    <option value="docente">Docente (Ing. en Software)</option>
+                </select>
+                <br><br>
+
+                <!-- Evento principal -->
+                <fieldset>
+                    <legend>Evento principal:</legend>
+                    <input type="radio" id="conferencia1" name="conferencia" value="conferencia1" required>
+                    <label for="conferencia1">Tendencias en Ingenieria en Software</label>
+                    <input type="radio" id="conferencia2" name="conferencia" value="conferencia2">
+                    <label for="conferencia2">Desarrollo Agil y DevOps</label>
+                    <input type="radio" id="entrega-reconocimientos" name="entrega" value="entrega-reconocimientos">
+                    <label for="entrega-reconocimientos">Entrega de reconocimientos</label>
+                    <input type="radio" id="conferencia3" name="conferencia" value="conferencia3">
+                    <label for="conferencia3">Inteligencia Artificial en la Industria</label>
+                    <input type="radio" id="evento-cultural" name="evento" value="evento-cultural">
+                    <label for="evento-cultural">Evento Cultural</label>
+
+                </fieldset>
+                <br>
+
+                <!-- Comentarios -->
+                <label for="comentarios">Comentarios (opcional):</label>
+                <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                <br><br>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+        <section action="#" method="post" id="admin">
+            <h3>Un random</h2>
+            <img src="img/foto-propia.png" alt="Icono de administrador" width="50">
+            
+        </section>
     </main>
     <footer>
-        &copy; 2026 Jornada ISW - Universidad Estatal de Sonora
+        &copy; 2026 Jornada de Ingeniero en Software - Universidad Estatal de Sonora
     </footer>
 </body>
 
